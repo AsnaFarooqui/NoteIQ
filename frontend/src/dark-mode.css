@@ -1,0 +1,211 @@
+/* dark-mode.css — apply body.dark-theme class to enable */
+
+/* ========== GLOBAL ========== */
+body.dark-theme {
+  background-color: #111827 !important;
+  color: #e5e7eb !important;
+}
+
+/* ========== SIDEBAR ========== */
+body.dark-theme .sidebar {
+  background: #1a1f2e !important;
+  border-right: 1px solid #2d3748 !important;
+}
+body.dark-theme .user-name { color: #e5e7eb !important; }
+body.dark-theme .user-status { color: #9ca3af !important; }
+body.dark-theme .menu-label { color: #6b7280 !important; }
+body.dark-theme .nav-item { color: #9ca3af !important; }
+body.dark-theme .nav-item:hover { background-color: #252d3d !important; }
+body.dark-theme .nav-item.active { background-color: #2d3748 !important; color: #FFBF00 !important; }
+body.dark-theme .logout-button { color: #f87171 !important; }
+body.dark-theme .logout-button:hover { background-color: #3b1f1f !important; }
+
+/* ========== LAYOUT / MAIN ========== */
+body.dark-theme .main-content { background-color: #111827 !important; }
+
+/* ========== DASHBOARD ========== */
+body.dark-theme .dashboard-container,
+body.dark-theme .welcome-heading,
+body.dark-theme .dashboard-header h1 { color: #e5e7eb !important; }
+
+body.dark-theme .note-card {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .note-card h3 { color: #f3f4f6 !important; }
+body.dark-theme .note-card p { color: #9ca3af !important; }
+
+body.dark-theme .search-bar input,
+body.dark-theme .search-container input {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .search-bar input::placeholder { color: #6b7280 !important; }
+
+body.dark-theme .filter-button,
+body.dark-theme .filter-tab {
+  background: #1f2937 !important;
+  color: #9ca3af !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .filter-button.active,
+body.dark-theme .filter-tab.active {
+  background: #FFBF00 !important;
+  color: #111827 !important;
+  border-color: #FFBF00 !important;
+}
+body.dark-theme .empty-state h3 { color: #e5e7eb !important; }
+body.dark-theme .empty-state p { color: #6b7280 !important; }
+
+/* ========== SETTINGS PAGE ========== */
+body.dark-theme .settings-page { background: #111827 !important; }
+body.dark-theme .settings-title { color: #f3f4f6 !important; }
+body.dark-theme .settings-subtitle { color: #6b7280 !important; }
+body.dark-theme .settings-card { background: #1f2937 !important; border: 1px solid #374151 !important; }
+body.dark-theme .card-header { border-bottom: 1px solid #374151 !important; }
+body.dark-theme .card-header h2 { color: #f3f4f6 !important; }
+body.dark-theme .form-group label { color: #9ca3af !important; }
+body.dark-theme .info-label { color: #6b7280 !important; }
+body.dark-theme .info-value { color: #f3f4f6 !important; }
+body.dark-theme .settings-input {
+  background: #111827 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .settings-input:focus { border-color: #FFBF00 !important; background: #1f2937 !important; }
+body.dark-theme .current-value { background: #111827 !important; color: #6b7280 !important; border: 1px solid #374151 !important; }
+
+/* Toggle Switch (dark mode toggle) */
+body.dark-theme .toggle-track { background: #374151 !important; }
+
+/* ========== TASKS PAGE ========== */
+body.dark-theme .tasks-page { background: #111827 !important; }
+body.dark-theme .tasks-title { color: #f3f4f6 !important; }
+body.dark-theme .tasks-table-wrapper { background: #1f2937 !important; border: 1px solid #374151 !important; }
+body.dark-theme .tasks-table-header { background: #252d3d !important; border-bottom: 1px solid #374151 !important; color: #9ca3af !important; }
+body.dark-theme .task-row { border-bottom: 1px solid #2d3748 !important; }
+body.dark-theme .task-row:hover { background: #252d3d !important; }
+body.dark-theme .task-title-text { color: #e5e7eb !important; }
+body.dark-theme .task-desc-text { color: #6b7280 !important; }
+body.dark-theme .new-task-form { background: #1f2937 !important; border: 1px solid #374151 !important; }
+body.dark-theme .task-input-main,
+body.dark-theme .task-input-desc,
+body.dark-theme .task-select,
+body.dark-theme .due-date-input input {
+  background: #111827 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .task-search-bar input { background: #1f2937 !important; color: #e5e7eb !important; border: 1px solid #374151 !important; }
+body.dark-theme .filter-tab { background: #1f2937 !important; color: #9ca3af !important; border: 1px solid #374151 !important; }
+body.dark-theme .tasks-footer { color: #6b7280 !important; border-top: 1px solid #374151 !important; }
+body.dark-theme .no-date { color: #6b7280 !important; }
+
+/* ========== AUTH PAGES ========== */
+body.dark-theme .login-container,
+body.dark-theme .signup-container { background-color: #111827 !important; }
+body.dark-theme .form-wrapper { background: #1f2937 !important; border: 1px solid #374151 !important; }
+body.dark-theme .title { color: #f3f4f6 !important; }
+body.dark-theme .subtitle { color: #9ca3af !important; }
+body.dark-theme .input { background: #111827 !important; color: #e5e7eb !important; border: 1px solid #374151 !important; }
+body.dark-theme .label { color: #9ca3af !important; }
+body.dark-theme .login-link { color: #9ca3af !important; }
+
+/* ========== QUILL EDITOR ========== */
+body.dark-theme .ql-toolbar { background: #1f2937 !important; border-color: #374151 !important; }
+body.dark-theme .ql-container { background: #111827 !important; border-color: #374151 !important; color: #e5e7eb !important; }
+body.dark-theme .ql-editor { color: #e5e7eb !important; background: #111827 !important; }
+body.dark-theme .ql-stroke { stroke: #9ca3af !important; }
+body.dark-theme .ql-fill { fill: #9ca3af !important; }
+body.dark-theme .ql-picker-label { color: #9ca3af !important; }
+body.dark-theme .ql-picker-options { background: #1f2937 !important; border-color: #374151 !important; }
+
+/* ========== NOTES PAGE (Note Panel + Editor) ========== */
+body.dark-theme .note-panel {
+  background: #1a1f2e !important;
+  border-right: 1px solid #2d3748 !important;
+  border-left: 1px solid #2d3748 !important;
+}
+body.dark-theme .note-panel-title { color: #e5e7eb !important; }
+body.dark-theme .note-panel-search-input {
+  background: #252d3d !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .note-panel-search-input::placeholder { color: #6b7280 !important; }
+body.dark-theme .note-panel-search-input:focus { background: #2d3748 !important; }
+body.dark-theme .new-note-container { border-bottom: 1px solid #374151 !important; }
+body.dark-theme .note-panel-sort-icon-button { color: #9ca3af !important; }
+
+body.dark-theme .note-item {
+  background: #1a1f2e !important;
+  border: 1px solid #2d3748 !important;
+}
+body.dark-theme .note-item:hover {
+  background: #252d3d !important;
+  border-color: #374151 !important;
+}
+body.dark-theme .note-item.active {
+  background: #2d3748 !important;
+  color: #FFBF00 !important;
+}
+body.dark-theme .note-panel-item-title { color: #e5e7eb !important; }
+body.dark-theme .note-panel-date { color: #6b7280 !important; }
+body.dark-theme .note-item.placeholder { background: #252d3d !important; }
+body.dark-theme .placeholder-title,
+body.dark-theme .placeholder-date { background: #374151 !important; }
+
+/* The full-page editor area (Screen.js layout) */
+body.dark-theme .text-editor-container,
+body.dark-theme .editor-wrapper,
+body.dark-theme [class*="editor"],
+body.dark-theme [class*="screen"] { background: #111827 !important; }
+
+/* ========== TASKS PAGE — Missing Overrides ========== */
+body.dark-theme .task-search-bar {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .task-search-bar input {
+  background: transparent !important;
+  color: #e5e7eb !important;
+}
+body.dark-theme .task-search-bar input::placeholder { color: #6b7280 !important; }
+
+body.dark-theme .priority-pill {
+  background: #1f2937 !important;
+  color: #9ca3af !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .priority-pill.active {
+  background: #111827 !important;
+  color: #e5e7eb !important;
+  border-color: #6b7280 !important;
+}
+
+body.dark-theme .due-badge {
+  background: #2d3748 !important;
+  color: #9ca3af !important;
+}
+
+body.dark-theme .task-select {
+  background: #111827 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .due-date-input {
+  background: #111827 !important;
+  border: 1px solid #374151 !important;
+}
+body.dark-theme .due-date-input input {
+  color: #e5e7eb !important;
+  background: transparent !important;
+}
+body.dark-theme .cancel-task-btn {
+  background: #1f2937 !important;
+  color: #9ca3af !important;
+  border-color: #374151 !important;
+}
+body.dark-theme .tasks-empty { color: #6b7280 !important; }
+

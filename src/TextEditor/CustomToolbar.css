@@ -1,0 +1,190 @@
+/* Font size classes for Quill (must match whitelist values) */
+.ql-size-10px { font-size: 10px; }
+.ql-size-12px { font-size: 12px; }
+.ql-size-14px { font-size: 14px; }
+.ql-size-16px { font-size: 16px; }
+.ql-size-18px { font-size: 18px; }
+.ql-size-24px { font-size: 24px; }
+.ql-size-32px { font-size: 32px; }
+.ql-size-48px { font-size: 48px; }
+
+/*Individual styling for all the fonts*/
+.ql-font-arial { font-family: Arial, sans-serif; }
+.ql-font-verdana { font-family: Verdana, sans-serif; }
+.ql-font-georgia { font-family: Georgia, serif; }
+.ql-font-courier-new { font-family: "Courier New", monospace; }
+.ql-font-times-new-roman { font-family: "Times New Roman", serif; }
+.ql-font-lucida { font-family: "Lucida Sans", sans-serif; }
+.ql-font-impact { font-family: Impact, sans-serif; }
+.ql-font-tahoma { font-family: Tahoma, sans-serif; }
+.ql-font-trebuchet { font-family: "Trebuchet MS", sans-serif; }
+.ql-font-palatino { font-family: "Palatino Linotype", serif; }
+.ql-font-monospace { font-family: monospace; }
+.ql-font-sans-serif { font-family: sans-serif; }
+.ql-font-serif { font-family: serif; }
+
+
+/* Optional: style font & size dropdowns to be smaller */ 
+
+
+.ql-toolbar {
+  border: none !important;
+}
+
+/* Button spacing */
+.ql-toolbar button {
+  margin-right: 0px;  
+}
+
+#custom-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+     gap: 40px;
+  padding: 15px;
+  /*background-color: #f9f9f9; */
+}
+
+/* Each group is a flex row */
+#custom-toolbar .toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 0px; /* gap between items within group */
+  /*border: 2px solid red;*/
+}
+
+.settings-dropdown {
+  margin-left: auto;
+}
+
+@media (max-width: 1700px) {
+  #custom-toolbar {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1641px) {
+  #custom-toolbar {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1550px) {
+  #custom-toolbar {
+    gap: 12px;
+  }
+}
+@media (max-width: 1468px) {
+  #custom-toolbar {
+    gap: 0px;
+  }
+}
+
+
+
+
+/*
+ * ===================================================================
+ *  Quill Custom Toolbar Icon Color Overrides
+ *  -----------------------------------------------------------------
+ *  Instructions: Change the color values in the :root section below.
+ *  This will update the colors for all icons across the toolbar.
+ * ===================================================================
+ */
+
+#custom-toolbar {
+  /* -- DEFINE YOUR COLORS HERE -- */
+  --icon-color-default: #4A4A4A; /* The default, idle color of the icons */
+  --icon-color-hover: #FFBF00;   /* The color when you hover over an icon */
+  --icon-color-active: #ffffff;  /* The color for active/selected formats (e.g., bold) */
+  --icon-color-active-hover: #ffffff;
+  /* You can also define your background colors here for consistency */
+  /*--button-bg-hover: #f0f0f0;*/
+  --button-bg-active: #FFBF00;
+}
+
+
+#custom-toolbar button:hover,
+#custom-toolbar .ql-picker-label:hover {
+  background-color: var(--button-bg-hover);
+  border-radius: 5px;
+}
+
+#custom-toolbar .ql-active {
+  background-color: var(--button-bg-active) !important;
+  border-radius: 5px;
+}
+
+/* This targets the icon SVG when you hover over an already active button. */
+#custom-toolbar .ql-active:hover .ql-stroke {
+    stroke: var(--icon-color-active-hover) !important;
+}
+
+#custom-toolbar .ql-active:hover .ql-fill {
+    fill: var(--icon-color-active-hover) !important;
+}
+
+
+/* -- DEFAULT ICON COLOR -- */
+/* This long selector targets every single button icon in its default state. */
+#custom-toolbar .ql-bold .ql-stroke,
+#custom-toolbar .ql-italic .ql-stroke,
+#custom-toolbar .ql-underline .ql-stroke,
+#custom-toolbar .ql-strike .ql-stroke,
+#custom-toolbar .ql-list .ql-stroke,
+#custom-toolbar .ql-align .ql-stroke,
+#custom-toolbar .ql-blockquote .ql-stroke,
+#custom-toolbar .ql-code-block .ql-stroke,
+#custom-toolbar .ql-direction .ql-stroke,
+#custom-toolbar .ql-indent .ql-stroke,
+#custom-toolbar .ql-indent .ql-stroke,
+#custom-toolbar .ql-clean .ql-stroke,
+#custom-toolbar .ql-link .ql-stroke,
+#custom-toolbar .ql-image .ql-stroke,
+#custom-toolbar .ql-color .ql-stroke,
+#custom-toolbar .ql-background .ql-stroke,
+#custom-toolbar .settings-dropdown
+#custom-toolbar .ql-picker .ql-picker-label .ql-stroke {
+  stroke: var(--icon-color-default) !important;
+}
+
+#custom-toolbar .ql-blockquote .ql-fill, /* Blockquote uses fill instead of stroke */
+#custom-toolbar .ql-direction .ql-fill {
+  fill: var(--icon-color-default) !important;
+}
+
+
+/* -- HOVER ICON COLOR -- */
+/* This long selector targets every icon when its button is hovered. */
+#custom-toolbar button:hover .ql-stroke,
+#custom-toolbar .ql-picker-label:hover .ql-stroke {
+  stroke: var(--icon-color-hover) !important;
+}
+
+#custom-toolbar button:hover .ql-fill {
+  fill: var(--icon-color-hover) !important;
+}
+
+/* -- ACTIVE ICON COLOR -- */
+/* This long selector targets every icon when its format is active. */
+#custom-toolbar .ql-active .ql-stroke,
+#custom-toolbar .ql-picker.ql-expanded .ql-picker-label .ql-stroke {
+  stroke: var(--icon-color-active) !important;
+}
+
+#custom-toolbar .ql-active .ql-fill {
+  fill: var(--icon-color-active) !important;
+}
+
+/*
+ * NOTE: Your custom undo/redo buttons (↶, ↷) are text, not SVGs.
+ * They can be styled with the standard 'color' property if needed.
+ */
+#custom-toolbar .ql-undo,
+#custom-toolbar .ql-redo {
+    color: var(--icon-color-default);
+}
+#custom-toolbar .ql-undo:hover,
+#custom-toolbar .ql-redo:hover {
+    color: var(--icon-color-hover);
+}

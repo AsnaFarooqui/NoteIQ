@@ -1,0 +1,19 @@
+.editable-heading-wrapper{
+  text-align: left;
+  padding: 25px 25px;
+  cursor: text;
+}
+
+.editable-heading-input {
+  font-size: 2.5rem;
+  display: inline-block;
+  width: 100%;
+  border: none !important;
+  outline: none !important;
+}
+
+.editable-heading-display {
+  font-size: 2.5rem; /* Equivalent to text-2xl */
+  display: inline-block;
+  width: 100%;
+}

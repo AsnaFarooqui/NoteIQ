@@ -1,0 +1,156 @@
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  FaUserCircle,
+  FaHome,
+  FaStickyNote,
+  FaSignOutAlt,
+  FaCog,
+  FaListAlt,
+} from "react-icons/fa";
+import { FaScroll } from "react-icons/fa";
+import "./sidebar.css";
+import { useAuth } from "../Authentication/AuthContext";
+import { useSide } from "./SidebarContext"
+import { API_BASE_URL } from "../App/config.js";
+
+function Sidebar() {
+
+  const {activeSection, setActiveSection} = useSide();
+
+  useEffect(() => {
+    localStorage.setItem("activeSection", activeSection);
+  }, [activeSection]);
+
+  const navigate = useNavigate();
+  const { token, logout } = useAuth();
+  const [username, setUsername] = useState("");
+  const [avatarUrl, setAvatarUrl] = useState(null);
+
+  const handleLogout = () => {
+    logout();
+    navigate("/login");
+  };
+
+  const handleNavigation = (name) => {
+    setActiveSection(name);
+    navigate(`/${name}`);
+  };
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/user/info`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        if (!response.ok) throw new Error("Failed to fetch user info");
+        const data = await response.json();
+
+        setUsername(data.username);
+        if (data.avatar_url) setAvatarUrl(data.avatar_url);
+      } catch (err) {
+        console.error("Error loading user info:", err);
+      }
+    };
+    fetchUserInfo();
+  }, [token]);
+
+  // Listen for profile updates from Settings page
+  useEffect(() => {
+    const handleProfileUpdate = (e) => {
+      if (e.detail?.avatar_url) setAvatarUrl(e.detail.avatar_url);
+      if (e.detail?.username) setUsername(e.detail.username);
+    };
+    window.addEventListener('profileUpdated', handleProfileUpdate);
+    return () => window.removeEventListener('profileUpdated', handleProfileUpdate);
+  }, []);
+
+  return (
+    <div className="sidebar">
+      <div className="sidebar-header">
+        <FaScroll
+          className={`logo-icon ${activeSection === "home" ? "active" : ""}`}
+          onClick={() => handleNavigation("home")}
+        ></FaScroll>
+      </div>
+
+      <div className="sidebar-content">
+        {/* User Profile Section */}
+        <div className="user-profile" onClick={() => handleNavigation("settings")}>
+          <div className="avatar-container">
+            {avatarUrl
+              ? <img src={avatarUrl} alt="avatar" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'12px'}} />
+              : <FaUserCircle className="user-avatar" />}
+          </div>
+          <div className="user-info">
+            <div className="user-name">{username}</div>
+            <div className="user-status">Settings</div>
+          </div>
+        </div>
+
+        {/* Navigation Menu */}
+        <nav className="nav-menu">
+          <div className="menu-label">MENU</div>
+          <ul>
+            <li
+              className={`nav-item ${activeSection === "home" ? "active" : ""}`}
+              onClick={() => handleNavigation("home")}
+            >
+              <div className="nav-item-content">
+                <FaHome className="nav-icon" />
+                <span>Home</span>
+              </div>
+              {activeSection === "home" && (
+                <div className="active-indicator"></div>
+              )}
+            </li>
+            <li
+              className={`nav-item ${activeSection === "notes" ? "active" : ""}`}
+              onClick={() => handleNavigation("notes")}
+            >
+              <div className="nav-item-content">
+                <FaStickyNote className="nav-icon" />
+                <span>Notes</span>
+              </div>
+              {activeSection === "notes" && (
+                <div className="active-indicator"></div>
+              )}
+            </li>
+            <li
+              className={`nav-item ${activeSection === "tasks" ? "active" : ""}`}
+              onClick={() => handleNavigation("tasks")}
+            >
+              <div className="nav-item-content">
+                <FaListAlt className="nav-icon" />
+                <span>Tasks</span>
+              </div>
+            </li>
+            <li
+              className={`nav-item ${activeSection === "settings" ? "active" : ""}`}
+              onClick={() => handleNavigation("settings")}
+            >
+              <div className="nav-item-content">
+                <FaCog className="nav-icon" />
+                <span>Settings</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        {/* Logout Button */}
+        <div className="logout-container">
+          <button className="logout-button" onClick={handleLogout}>
+            <FaSignOutAlt className="logout-icon" />
+            <span>Sign Out</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Sidebar;

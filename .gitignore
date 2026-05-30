@@ -1,0 +1,20 @@
+# Global ignore for node_modules
+**/node_modules/
+**/dist/
+**/build/
+
+# Environment files
+**/.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# SonarQube 
+.scannerwork/
+
+WORKFLOW.md 
+README.md 
