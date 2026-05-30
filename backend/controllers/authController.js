@@ -43,7 +43,7 @@ const signup = async (req, res) => {
 
     // If email credentials are configured, send verification email
     if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
-      const verificationUrl = `http://localhost:5000/auth/verify/${token}`;
+      const verificationUrl = `https://noteiq-backend-on66.onrender.com/auth/verify/${token}`;
 
       const mailOptions = {
         from: process.env.EMAIL_USER,
