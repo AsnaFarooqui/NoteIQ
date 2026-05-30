@@ -9,7 +9,7 @@ const profileRoutes = require("./routes/profile");
 const taskRoutes = require("./routes/tasks");
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000" })); // your frontend dev port
+// app.use(cors({ origin: "http://localhost:3000" })); // your frontend dev port
 app.use(cors());
 app.use(express.json({ limit: '5mb' }));
 
