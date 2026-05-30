@@ -2,11 +2,11 @@
 import axios from "axios";
 
 const api = axios.create({
-  // baseURL: "http://localhost:5000",
-  baseURL: process.env.REACT_APP_API_URL,
+  baseURL:  "https://noteiq-backend-on66.onrender.com",
   withCredentials: true, // send cookies like refreshToken
 });
 
+console.log("Axios Base URL:", process.env.REACT_APP_API_URL);
 // Token stored in memory or localStorage
 let token = localStorage.getItem("token");
 
@@ -29,15 +29,9 @@ api.interceptors.response.use(
 
       try {
         const res = await axios.post(
-          `${process.env.REACT_APP_API_URL}/auth/refresh`,
+            `https://noteiq-backend-on66.onrender.com/auth/refresh`,
           { withCredentials: true }
         );
-        // const res = await axios.post(
-        //   "http://localhost:5000/auth/refresh",
-        //   {},
-        //   { withCredentials: true }
-        // );
-
         
         const newToken = res.data.token;
         localStorage.setItem("token", newToken);
