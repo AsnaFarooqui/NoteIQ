@@ -21,11 +21,11 @@ const transporter = nodemailer.createTransport({
   connectionTimeout: 30000,
 });
 
-transporter.verify((error, success) => {
-  if (error) {
-    console.error("SMTP Verify Error:", error);
-  } else {
-    console.log("SMTP Server Ready");
-  }
-});
+// transporter.verify((error, success) => {
+//   if (error) {
+//     console.error("SMTP Verify Error:", error);
+//   } else {
+//     console.log("SMTP Server Ready");
+//   }
+// });
 module.exports = transporter;

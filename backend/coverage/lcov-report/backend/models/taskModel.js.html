@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -111,31 +111,31 @@
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
 <a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -147,43 +147,43 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const pool = require('../db2');
 &nbsp;
-const getAllTasks = <span class="fstat-no" title="function not covered" >as</span>ync (userId) =&gt; {
-  const result = <span class="cstat-no" title="statement not covered" >await pool.query(</span>
+const getAllTasks = async (userId) =&gt; {
+  const result = await pool.query(
     `SELECT * FROM tasks WHERE user_id = $1 ORDER BY 
      CASE priority WHEN 'high' THEN 1 WHEN 'medium' THEN 2 WHEN 'low' THEN 3 END,
      is_completed ASC, created_at DESC`,
     [userId]
   );
-<span class="cstat-no" title="statement not covered" >  return result.rows;</span>
+  return result.rows;
 };
 &nbsp;
-const createTask = <span class="fstat-no" title="function not covered" >as</span>ync (userId, title, description, priority, due_date) =&gt; {
-  const result = <span class="cstat-no" title="statement not covered" >await pool.query(</span>
+const createTask = async (userId, title, description, priority, due_date) =&gt; {
+  const result = await pool.query(
     `INSERT INTO tasks (user_id, title, description, priority, due_date)
      VALUES ($1, $2, $3, $4, $5)
      RETURNING *`,
-    [userId, title, description || null, priority || 'medium', due_date || null]
+    [userId, title, description || <span class="branch-1 cbranch-no" title="branch not covered" >null,</span> priority || <span class="branch-1 cbranch-no" title="branch not covered" >'medium',</span> due_date || null]
   );
-<span class="cstat-no" title="statement not covered" >  return result.rows[0];</span>
+  return result.rows[0];
 };
 &nbsp;
-const updateTask = <span class="fstat-no" title="function not covered" >as</span>ync (taskId, userId, fields) =&gt; {
-  const { title, description, priority, due_date, is_completed } = <span class="cstat-no" title="statement not covered" >fields;</span>
-  const result = <span class="cstat-no" title="statement not covered" >await pool.query(</span>
+const updateTask = async (taskId, userId, fields) =&gt; {
+  const { title, description, priority, due_date, is_completed } = fields;
+  const result = await pool.query(
     `UPDATE tasks SET
        title = COALESCE($1, title),
        description = COALESCE($2, description),
@@ -195,15 +195,15 @@ const updateTask = <span class="fstat-no" title="function not covered" >as</span
      RETURNING *`,
     [title, description, priority, due_date, is_completed, taskId, userId]
   );
-<span class="cstat-no" title="statement not covered" >  return result.rows[0];</span>
+  return result.rows[0];
 };
 &nbsp;
-const deleteTask = <span class="fstat-no" title="function not covered" >as</span>ync (taskId, userId) =&gt; {
-  const result = <span class="cstat-no" title="statement not covered" >await pool.query(</span>
+const deleteTask = async (taskId, userId) =&gt; {
+  const result = await pool.query(
     'DELETE FROM tasks WHERE id = $1 AND user_id = $2 RETURNING id',
     [taskId, userId]
   );
-<span class="cstat-no" title="statement not covered" >  return result.rows[0];</span>
+  return result.rows[0];
 };
 &nbsp;
 module.exports = { getAllTasks, createTask, updateTask, deleteTask };
@@ -214,7 +214,7 @@ module.exports = { getAllTasks, createTask, updateTask, deleteTask };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-05-30T21:31:39.499Z
+                at 2026-05-31T13:50:52.624Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

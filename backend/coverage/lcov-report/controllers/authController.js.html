@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for backend/controllers/notesController.js</title>
+    <title>Code coverage report for controllers/authController.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">backend/controllers</a> notesController.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">controllers</a> authController.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75.6% </span>
+                <span class="strong">33.92% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>62/82</span>
+                <span class='fraction'>19/56</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">36% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>9/25</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">66.66% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>10/15</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">87.5% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>7/8</span>
+                <span class='fraction'>2/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75.3% </span>
+                <span class="strong">33.92% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>61/81</span>
+                <span class='fraction'>19/56</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -236,181 +236,153 @@
 <a name='L171'></a><a href='#L171'>171</a>
 <a name='L172'></a><a href='#L172'>172</a>
 <a name='L173'></a><a href='#L173'>173</a>
-<a name='L174'></a><a href='#L174'>174</a>
-<a name='L175'></a><a href='#L175'>175</a>
-<a name='L176'></a><a href='#L176'>176</a>
-<a name='L177'></a><a href='#L177'>177</a>
-<a name='L178'></a><a href='#L178'>178</a>
-<a name='L179'></a><a href='#L179'>179</a>
-<a name='L180'></a><a href='#L180'>180</a>
-<a name='L181'></a><a href='#L181'>181</a>
-<a name='L182'></a><a href='#L182'>182</a>
-<a name='L183'></a><a href='#L183'>183</a>
-<a name='L184'></a><a href='#L184'>184</a>
-<a name='L185'></a><a href='#L185'>185</a>
-<a name='L186'></a><a href='#L186'>186</a>
-<a name='L187'></a><a href='#L187'>187</a>
-<a name='L188'></a><a href='#L188'>188</a>
-<a name='L189'></a><a href='#L189'>189</a>
-<a name='L190'></a><a href='#L190'>190</a>
-<a name='L191'></a><a href='#L191'>191</a>
-<a name='L192'></a><a href='#L192'>192</a>
-<a name='L193'></a><a href='#L193'>193</a>
-<a name='L194'></a><a href='#L194'>194</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
+<a name='L174'></a><a href='#L174'>174</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -418,6 +390,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -426,221 +400,187 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const notesModel = require("../models/notesModel");
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const bcrypt = require("bcrypt");
+const userModel = require("../models/userModel");
+const generateToken = require("../utils/jwt");
+&nbsp;
+// for node mailer
+const crypto = require("crypto");
+const transporter = require("../mail");
+&nbsp;
+// for pino logger
 const logger = require("../utils/logger");
 &nbsp;
-const updateNoteContent = async (req, res) =&gt; {
-  const { noteId } = req.params;
-  const { ContentHTML } = req.body;
-  const userId = req.user.userId;
+const signup = async (req, res) =&gt; {
+  const { username, email, password } = req.body;
 &nbsp;
-  if (!ContentHTML) {
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (!username || !email || !password) {
     return res
       .status(400)
-      .json({ error: "Missing HTML content in request body." });
+      .json({ error: "Username, email, and password are required." });
   }
-  try {
-    const updatedNote = await notesModel.SaveHTMLInNoteID(
-      ContentHTML,
-      noteId,
-      userId,
-    );
-&nbsp;
-    if (!updatedNote) {
-      logger.warn({ noteId, userId }, "Note not found when updating content");
-      return res.status(404).json({ error: "Note not found" });
-    }
-&nbsp;
-    logger.info({ noteId, userId }, "Note content updated successfully");
-    res.status(200).json({
-      message: "Note content updated successfully.",
-    });
-  } catch (err) {
-<span class="cstat-no" title="statement not covered" >    logger.error({ err, noteId, userId }, "Error updating note content");</span>
-<span class="cstat-no" title="statement not covered" >    res.status(500).json({ error: "Internal server error." });</span>
-  }
-};
-&nbsp;
-const updateNoteName = async (req, res) =&gt; {
-  const { noteId } = req.params;
-  const { noteName } = req.body;
-  const userId = req.user.userId;
-&nbsp;
-  if (!noteName) {
-    return res
-      .status(400)
-      .json({ error: "Missing HTML content in request body." });
-  }
-  try {
-    const updatedName = await notesModel.SaveNewNameInNoteID(
-      noteName,
-      noteId,
-      userId,
-    );
-&nbsp;
-    if (!updatedName) {
-      logger.warn({ noteId, userId }, "Note not found when updating name");
-      return res.status(404).json({ error: "Note not found" });
-    }
-    logger.info(
-      { noteId, userId, newName: noteName },
-      "Note name updated successfully",
-    );
-    res.status(200).json({
-      message: "Note name updated successfully.",
-    });
-  } catch (err) {
-<span class="cstat-no" title="statement not covered" >    logger.error({ err, noteId, userId }, "Error updating note name");</span>
-<span class="cstat-no" title="statement not covered" >    res.status(500).json({ error: "Internal server error." });</span>
-  }
-};
-&nbsp;
-const getNoteContent = async (req, res) =&gt; {
-  const { noteId } = req.params;
-  const userId = req.user.userId;
-&nbsp;
-  try {
-    const getNote = await notesModel.LoadHTMLByNoteID(noteId, userId);
-&nbsp;
-    if (!getNote) {
-      logger.warn({ noteId, userId }, "Note not found when fetching content");
-      return res.status(404).json({ error: "Note not found" });
-    }
-    logger.info({ noteId, userId }, "Note content fetched successfully");
-    res.status(200).json(getNote);
-  } catch (err) {
-<span class="cstat-no" title="statement not covered" >    logger.error({ err, noteId, userId }, "Error fetching note content");</span>
-<span class="cstat-no" title="statement not covered" >    res.status(500).json({ error: "Internal server error." });</span>
-  }
-};
-&nbsp;
-const getAllUserNotes = async (req, res) =&gt; {
-  const userId = req.user.userId;
-&nbsp;
-  try {
-    const getNotes = await notesModel.findAllNotesByUserID(userId);
-&nbsp;
-    const formattedNotes = getNotes.map((note) =&gt; ({
-      id: note.id,
-      note_name: note.note_name,
-      updatedAt: note.updated_at,
-      createdAt: note.created_at,
-    }));
-&nbsp;
-    logger.info(
-      { userId, count: formattedNotes.length },
-      "Fetched all user notes",
-    );
-    res.status(200).json(formattedNotes); //
-  } catch (err) {
-<span class="cstat-no" title="statement not covered" >    logger.error({ err, userId }, "Error fetching user notes");</span>
-<span class="cstat-no" title="statement not covered" >    res.status(500).json({ error: "Internal server error." });</span>
-  }
-};
-&nbsp;
-const createNewNote = async (req, res) =&gt; {
-  const userId = req.user.userId;
-  try {
-    const createNote = await notesModel.CreateNote(userId);
-&nbsp;
-    const note = {
-      id: createNote.id,
-      note_name: createNote.note_name,
-      updated_at: createNote.updated_at,
-      created_at: createNote.created_at,
-    };
-    logger.info({ noteId: note.id, userId }, "Note created");
-    res.status(200).json(note);
-  } catch (err) {
-<span class="cstat-no" title="statement not covered" >    logger.error({ err, userId }, "Error creating new note");</span>
-<span class="cstat-no" title="statement not covered" >    res.status(500).json({ error: "Internal server error." });</span>
-  }
-};
-&nbsp;
-const deleteNote = async (req, res) =&gt; {
-  const { noteId } = req.params;
-  const userId = req.user.userId;
-&nbsp;
-  try {
-    const deleteNote = await notesModel.DeleteNote(noteId, userId);
-&nbsp;
-    logger.info({ noteId, userId }, "Note deleted");
-    res.status(200).json({
-      message: "Note delete successfully",
-      note: deleteNote,
-    });
-  } catch (err) {
-<span class="cstat-no" title="statement not covered" >    logger.error({ err, noteId, userId }, "Error deleting note");</span>
-<span class="cstat-no" title="statement not covered" >    res.status(500).json({ error: "Internal server error." });</span>
-  }
-};
-&nbsp;
-const getAllUserNotesForDashboard = <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
-  const userId = <span class="cstat-no" title="statement not covered" >req.user.userId;</span>
-  const {
-    page = <span class="branch-0 cbranch-no" title="branch not covered" >1,</span>
-    limit = <span class="branch-0 cbranch-no" title="branch not covered" >10,</span>
-    search = <span class="branch-0 cbranch-no" title="branch not covered" >"",</span>
-    sortBy = <span class="branch-0 cbranch-no" title="branch not covered" >"updated_at",</span>
-    order = <span class="branch-0 cbranch-no" title="branch not covered" >"DESC",</span>
-  } = <span class="cstat-no" title="statement not covered" >req.query;</span>
-&nbsp;
-  const offset = <span class="cstat-no" title="statement not covered" >(page - 1) * limit;</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  try {</span>
-    const notes = <span class="cstat-no" title="statement not covered" >await notesModel.findAllNotesByUserIDForDashboard(userId, {</span>
-      limit: parseInt(limit),
-      offset: parseInt(offset),
-      searchKeyword: search,
-      sortBy,
-      order,
-    });
+    const existingUsername = <span class="cstat-no" title="statement not covered" >await userModel.findUserByUsername(username);</span>
+<span class="cstat-no" title="statement not covered" >    if (existingUsername) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(409).json({ error: "Username is already taken." });</span>
+    }
 &nbsp;
-    const totalCount = <span class="cstat-no" title="statement not covered" >await notesModel.countFilteredNotes(userId, search);</span>
+    const existingEmail = <span class="cstat-no" title="statement not covered" >await userModel.findUserByEmail(email);</span>
+<span class="cstat-no" title="statement not covered" >    if (existingEmail) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(409).json({ error: "Email is already registered." });</span>
+    }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    res.status(200).json({</span>
-      notes,
-      page: parseInt(page),
-      limit: parseInt(limit),
-      totalCount,
-    });
-  } catch (err) {
-<span class="cstat-no" title="statement not covered" >    res.status(500).json({ error: "Internal server error." });</span>
+    // THE REAL HASHING HERE ***
+    const hashedPassword = <span class="cstat-no" title="statement not covered" >await bcrypt.hash(password, 10);</span>
+&nbsp;
+    const token = <span class="cstat-no" title="statement not covered" >crypto.randomBytes(32).toString("hex");</span>
+&nbsp;
+    const newUser = <span class="cstat-no" title="statement not covered" >await userModel.createUser(</span>
+      username,
+      email,
+      hashedPassword,
+      token
+    );
+&nbsp;
+    // If email credentials are configured, send verification email
+<span class="cstat-no" title="statement not covered" >    if (process.env.EMAIL_USER &amp;&amp; process.env.EMAIL_PASS) {</span>
+      const verificationUrl = <span class="cstat-no" title="statement not covered" >`https://noteiq-backend-on66.onrender.com/auth/verify/${token}`;</span>
+&nbsp;
+      const mailOptions = <span class="cstat-no" title="statement not covered" >{</span>
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: "Verify your email",
+        html: `
+  &lt;div style="max-width: 600px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"&gt;
+    &lt;h2 style="color: #333; text-align: center;"&gt;Welcome to Note Taker Prototype! &lt;/h2&gt;
+    &lt;p style="font-size: 16px; color: #555;"&gt;
+      Thank you for signing up! Please verify your email address to activate your account.
+    &lt;/p&gt;
+    &lt;div style="text-align: center; margin: 30px 0;"&gt;
+      &lt;a href="${verificationUrl}" style="padding: 12px 24px; background-color: #FFBF00; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;"&gt;
+        Verify Email
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p style="font-size: 14px; color: #999;"&gt;
+      If the button above doesn't work, copy and paste this link into your browser:
+    &lt;/p&gt;
+    &lt;p style="word-break: break-all; font-size: 14px; color: #555;"&gt;
+      &lt;a href="${verificationUrl}" style="color: #0066cc;"&gt;${verificationUrl}&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;hr style="border: none; border-top: 1px solid #eee; margin: 40px 0;"&gt;
+    &lt;p style="font-size: 12px; color: #999; text-align: center;"&gt;
+      This email was sent by Note Taker Prototype. If you did not sign up, you can ignore this email.
+    &lt;/p&gt;
+  &lt;/div&gt;
+`,
+      };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      await transporter.sendMail(mailOptions);</span>
+<span class="cstat-no" title="statement not covered" >      logger.info({ userId: newUser.id, email }, "New user signed up and verification email sent");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      res.status(201).json({</span>
+        message: "User created, Verify email now",
+        user: {
+          id: newUser.id,
+          username: newUser.username,
+          email: newUser.email,
+        },
+      });
+    } else {
+      // No email configured — auto-verify for local development
+<span class="cstat-no" title="statement not covered" >      await userModel.markUserAsVerified(newUser.id);</span>
+<span class="cstat-no" title="statement not covered" >      logger.info({ userId: newUser.id, email }, "New user signed up and auto-verified (no email configured)");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      res.status(201).json({</span>
+        message: "User created and auto-verified (local dev mode)",
+        user: {
+          id: newUser.id,
+          username: newUser.username,
+          email: newUser.email,
+        },
+      });
+    }
+  } catch (error) {
+<span class="cstat-no" title="statement not covered" >    logger.error({ err: error }, "Signup error");</span>
+<span class="cstat-no" title="statement not covered" >    res.status(500).json({ error: "Internal server error" });</span>
   }
+};
+const verifyEmail = <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+  const { token } = <span class="cstat-no" title="statement not covered" >req.params;</span>
+&nbsp;
+  const user = <span class="cstat-no" title="statement not covered" >await userModel.findUserByVerificationToken(token);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!user) {</span>
+<span class="cstat-no" title="statement not covered" >    return res.status(400).json({ error: "Invalid or expired token." });</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  await userModel.markUserAsVerified(user.id);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  logger.info({ userId: user.id }, "Email verified successfully");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  res.send("&lt;h2&gt;Email verified successfully! You can now log in.&lt;/h2&gt;");</span>
 };
 &nbsp;
 &nbsp;
+const login = async (req, res) =&gt; {
+  const { usernameOrEmail, password } = req.body;
+&nbsp;
+  // 1. Basic validation
+  if (!usernameOrEmail || !password) {
+    return res
+      .status(400)
+      .json({ error: "Username/email and password are required." });
+  }
+&nbsp;
+  // 2. Find user
+  const user = await userModel.findUserByUsernameOrEmail(usernameOrEmail);
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (!user) {
+    return res.status(401).json({ error: "Invalid credentials." });
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!user.is_verified) {</span>
+<span class="cstat-no" title="statement not covered" >    return res.status(403).json({ error: "Email not verified." });</span>
+  }
+&nbsp;
+  // 3. Compare password
+  const isMatch = <span class="cstat-no" title="statement not covered" >await bcrypt.compare(password, user.password_hash);</span>
+<span class="cstat-no" title="statement not covered" >  if (!isMatch) {</span>
+<span class="cstat-no" title="statement not covered" >    return res.status(401).json({ error: "Wrong Password" });</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  await userModel.updateLastLogin(user.id);</span>
+&nbsp;
+  const token = <span class="cstat-no" title="statement not covered" >generateToken(user.id);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  logger.info({ userId: user.id }, "Login successful");</span>
+&nbsp;
+  // 4. Login success
+<span class="cstat-no" title="statement not covered" >  res.status(200).json({</span>
+    message: "Login successful",
+    token: token,
+    user: {
+      id: user.id,
+      username: user.username,
+      email: user.email,
+      role: user.role,
+    },
+  });
+};
+&nbsp;
 module.exports = {
-  updateNoteContent,
-  getNoteContent,
-  createNewNote,
-  deleteNote,
-  getAllUserNotes,
-  getAllUserNotesForDashboard,
-  updateNoteName,
+  signup,
+  login,
+  verifyEmail
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -649,16 +589,16 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-05-31T13:50:52.624Z
+                at 2026-05-31T13:14:30.080Z
             </div>
-        <script src="../../prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../sorter.js"></script>
-        <script src="../../block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     
